@@ -45,13 +45,14 @@ public class Main {
 		
 		pm.addValues(chrips, temp);
 		
-		
 		do {
 			pm.computeHypothesis(temp.size());
-			pm.computeCostFunction();			
-		} while(pm.checkFor());
+			pm.computeCostFunction();	
+			pm.OutputTitas();
+		} while(pm.checkFor()==true);
 		
 		pm.OutputTitas();
+				
 		
 	}
 
